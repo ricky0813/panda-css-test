@@ -1,0 +1,73 @@
+@layer utilities {
+
+  .font-style_body\.pBold {
+    font-style: body.pBold
+    }
+
+  .text_gray\.white {
+    color: var(--colors-gray-white)
+    }
+
+  .h_40px {
+    height: 40px
+    }
+
+  .white-space_nowrap {
+    white-space: nowrap
+    }
+
+  .p_0_24px {
+    padding: 0 24px
+    }
+
+  .rounded_8px {
+    border-radius: 8px
+    }
+
+  .pos_relative {
+    position: relative
+    }
+
+  .d_flex {
+    display: flex
+    }
+
+  .justify_center {
+    justify-content: center
+    }
+
+  .items_center {
+    align-items: center
+    }
+
+  .text_\#fff {
+    color: #fff
+    }
+
+  .transition_0\.2s {
+    transition: 0.2s
+    }
+
+  .\[\&_\>_span\]\:text_black > span {
+    color: black
+        }
+
+  .bg_primary\.10 {
+    background-color: primary.10;
+    background-color: var(--colors-primary-10)
+    }
+
+  .bg_gray {
+    background: gray
+    }
+
+  .bg_gray\.gray01 {
+    background: gray.gray01
+    }
+    @media screen and (min-width: 40em) {
+
+  .sm\:text_gray\.black {
+      color: var(--colors-gray-black)
+    }
+        }
+}

@@ -1,0 +1,18 @@
+@layer utilities {
+
+  .bg_blue {
+    background-color: blue
+    }
+
+  .w_100\% {
+    width: 100%
+    }
+
+  .h_100vh {
+    height: 100vh
+    }
+
+  .bg_yellow {
+    background: yellow
+    }
+}

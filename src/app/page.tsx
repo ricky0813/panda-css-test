@@ -1,95 +1,63 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import { css } from "../../styled-system/css";
+import { CoreButton as CoreB, StyledTestButton } from "@raoun/components";
+import { divider, flex, hstack, vstack } from "@styled-system/patterns";
+import { CoreHeader } from "@raoun/components";
+import CoreButton from "@/components/button/CoreButton";
+import "@raoun/components/dist/index.css";
+import { token } from "@styled-system/tokens";
+import TestButton from "@/components/TestButton";
+import { styled } from "@styled-system/jsx";
+import { Button } from "@/components/button/style";
 
 export default function Home() {
+  const a = token("colors.primary.10");
+  const width = "500px";
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <main className={mainClass}>
+        <div className={buttonsClass}>
+          <CoreButton />
+          <CoreButton isLoading />
         </div>
-      </div>
+        <div className={buttonsClass}>
+          <CoreButton
+            buttonType="primary"
+            styleType="tonal"
+            css={{ width: "800px" }}
+          />
+          <CoreButton buttonType="primary" styleType="tonal" isLoading />
+        </div>
+        <div className={buttonsClass}>
+          <CoreButton buttonType="primary" styleType="outlined" />
+          <CoreButton buttonType="primary" styleType="outlined" isLoading />
+        </div>
+        <div className={buttonsClass}>
+          <CoreButton buttonType="primary" styleType="text" />
+          <CoreButton buttonType="primary" styleType="text" />
+        </div>
+        <Button buttonType="primary" styleType="filled">
+          <span>테스트 버튼</span>
+        </Button>
+      </main>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      <div className={divider({ marginTop: "8px" })} />
+    </>
+  );
 }
+
+// const JsxButton = styled.button`
+//   width: 300px;
+//   height: 100px;
+
+// `;
+
+const mainClass = hstack({
+  padding: "16px",
+  gap: "8px",
+});
+
+const buttonsClass = vstack({
+  gap: "8px",
+});

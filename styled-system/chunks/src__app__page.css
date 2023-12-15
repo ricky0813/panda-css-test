@@ -1,0 +1,90 @@
+@layer utilities {
+  .w_500px {
+    width: 500px
+    }
+
+  .bg_\| {
+    background-color: |;
+    background: |
+    }
+
+  .before\:content_test::before {
+    content: test
+        }
+
+  .before\:d_block::before {
+    display: block
+        }
+
+  .before\:w_1000px::before {
+    width: 1000px
+        }
+
+  .before\:h_500px::before {
+    height: 500px
+        }
+
+  .before\:bg_black::before {
+    background-color: black
+        }
+
+  .before\:pos_absolute::before {
+    position: absolute
+        }
+
+  .before\:top_0::before {
+    top: 0
+        }
+
+  .before\:left_0::before {
+    left: 0
+        }
+
+  .h_100vh {
+    height: 100vh
+    }
+
+  .pos_relative {
+    position: relative
+    }
+
+  .\--thickness_1px {
+    --thickness: 1px
+    }
+
+  .w_100\% {
+    width: 100%
+    }
+
+  .border-block-end-width_var\(--thickness\) {
+    border-block-end-width: var(--thickness)
+    }
+
+  .mt_8px {
+    margin-top: 8px
+    }
+
+  .flex_row {
+    flex-direction: row
+    }
+
+  .p_16px {
+    padding: 16px
+    }
+
+  .d_flex {
+    display: flex
+    }
+
+  .items_center {
+    align-items: center
+    }
+
+  .gap_8px {
+    gap: 8px
+    }
+
+  .flex_column {
+    flex-direction: column
+    }
+}

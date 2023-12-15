@@ -1,0 +1,24 @@
+/* eslint-disable */
+export type Token = "colors.primary.10" | "colors.primary.15" | "colors.primary.20" | "colors.primary.30" | "colors.primary.40" | "colors.primary.50" | "colors.primary.60" | "colors.primary.70" | "colors.primary.80" | "colors.primary.90" | "colors.primary.95" | "colors.gray.5" | "colors.gray.10" | "colors.gray.15" | "colors.gray.20" | "colors.gray.30" | "colors.gray.40" | "colors.gray.50" | "colors.gray.60" | "colors.gray.70" | "colors.gray.80" | "colors.gray.90" | "colors.gray.white" | "colors.gray.black" | "colors.system.red_lighten" | "colors.system.red" | "colors.system.red_darken" | "colors.system.yellow_lighten" | "colors.system.yellow" | "colors.system.yellow_darken" | "colors.system.green_lighten" | "colors.system.green" | "colors.system.green_darken" | "colors.system.blue_lighten" | "colors.system.blue" | "colors.system.blue_darken" | "colors.system.orange_lighten" | "colors.system.orange" | "colors.system.orange_darken" | "colors.system.brown_lighten" | "colors.system.brown" | "colors.system.brown_darken" | "fontWeights.title" | "fontWeights.body.bold" | "fontWeights.body.light" | "breakpoints.sm" | "breakpoints.md" | "breakpoints.lg" | "breakpoints.xl" | "breakpoints.2xl" | "sizes.breakpoint-sm" | "sizes.breakpoint-md" | "sizes.breakpoint-lg" | "sizes.breakpoint-xl" | "sizes.breakpoint-2xl" | "colors.colorPalette.10" | "colors.colorPalette.15" | "colors.colorPalette.20" | "colors.colorPalette.30" | "colors.colorPalette.40" | "colors.colorPalette.50" | "colors.colorPalette.60" | "colors.colorPalette.70" | "colors.colorPalette.80" | "colors.colorPalette.90" | "colors.colorPalette.95" | "colors.colorPalette.5" | "colors.colorPalette.white" | "colors.colorPalette.black" | "colors.colorPalette.red_lighten" | "colors.colorPalette.red" | "colors.colorPalette.red_darken" | "colors.colorPalette.yellow_lighten" | "colors.colorPalette.yellow" | "colors.colorPalette.yellow_darken" | "colors.colorPalette.green_lighten" | "colors.colorPalette.green" | "colors.colorPalette.green_darken" | "colors.colorPalette.blue_lighten" | "colors.colorPalette.blue" | "colors.colorPalette.blue_darken" | "colors.colorPalette.orange_lighten" | "colors.colorPalette.orange" | "colors.colorPalette.orange_darken" | "colors.colorPalette.brown_lighten" | "colors.colorPalette.brown" | "colors.colorPalette.brown_darken"
+
+export type ColorPalette = "primary" | "gray" | "system"
+
+export type ColorToken = "primary.10" | "primary.15" | "primary.20" | "primary.30" | "primary.40" | "primary.50" | "primary.60" | "primary.70" | "primary.80" | "primary.90" | "primary.95" | "gray.5" | "gray.10" | "gray.15" | "gray.20" | "gray.30" | "gray.40" | "gray.50" | "gray.60" | "gray.70" | "gray.80" | "gray.90" | "gray.white" | "gray.black" | "system.red_lighten" | "system.red" | "system.red_darken" | "system.yellow_lighten" | "system.yellow" | "system.yellow_darken" | "system.green_lighten" | "system.green" | "system.green_darken" | "system.blue_lighten" | "system.blue" | "system.blue_darken" | "system.orange_lighten" | "system.orange" | "system.orange_darken" | "system.brown_lighten" | "system.brown" | "system.brown_darken" | "colorPalette.10" | "colorPalette.15" | "colorPalette.20" | "colorPalette.30" | "colorPalette.40" | "colorPalette.50" | "colorPalette.60" | "colorPalette.70" | "colorPalette.80" | "colorPalette.90" | "colorPalette.95" | "colorPalette.5" | "colorPalette.white" | "colorPalette.black" | "colorPalette.red_lighten" | "colorPalette.red" | "colorPalette.red_darken" | "colorPalette.yellow_lighten" | "colorPalette.yellow" | "colorPalette.yellow_darken" | "colorPalette.green_lighten" | "colorPalette.green" | "colorPalette.green_darken" | "colorPalette.blue_lighten" | "colorPalette.blue" | "colorPalette.blue_darken" | "colorPalette.orange_lighten" | "colorPalette.orange" | "colorPalette.orange_darken" | "colorPalette.brown_lighten" | "colorPalette.brown" | "colorPalette.brown_darken"
+
+export type FontWeightToken = "title" | "body.bold" | "body.light"
+
+export type BreakpointToken = "sm" | "md" | "lg" | "xl" | "2xl"
+
+export type SizeToken = "breakpoint-sm" | "breakpoint-md" | "breakpoint-lg" | "breakpoint-xl" | "breakpoint-2xl"
+
+export type AnimationName = "spin" | "ping" | "pulse" | "bounce" | "buttonSpin"
+
+export type Tokens = {
+		colors: ColorToken
+		fontWeights: FontWeightToken
+		breakpoints: BreakpointToken
+		sizes: SizeToken
+		animationName: AnimationName
+} & { [token: string]: never }
+
+export type TokenCategory = "zIndex" | "opacity" | "colors" | "fonts" | "fontSizes" | "fontWeights" | "lineHeights" | "letterSpacings" | "sizes" | "shadows" | "spacing" | "radii" | "borders" | "durations" | "easings" | "animations" | "blurs" | "gradients" | "breakpoints" | "assets"
