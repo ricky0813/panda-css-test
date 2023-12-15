@@ -149,6 +149,6 @@ export const coreButton = cva({
   },
 });
 
-export type ButtonVariants = RecipeVariantProps<typeof coreButton>;
+export type ButtonVariants = RecipeVariantProps<typeof coreButton>;∑
 
 export const Button = styled("button", coreButton);
